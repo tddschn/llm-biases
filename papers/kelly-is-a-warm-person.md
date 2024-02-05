@@ -10,6 +10,8 @@ https://sourcegraph.com/github.com/uclanlp/biases-llm-reference-letters
 
 prompt generation: https://sourcegraph.com/github.com/uclanlp/biases-llm-reference-letters/-/blob/generate_clg.py?L24=
 
+generation: https://github.com/uclanlp/biases-llm-reference-letters/blob/main/generated_letters/chatgpt/clg/clg_letters.csv
+
 - [“Kelly is a Warm Person, Joseph is a Role Model”: Gender Biases in LLM-Generated Reference Letters](#kelly-is-a-warm-person-joseph-is-a-role-model-gender-biases-in-llm-generated-reference-letters)
   - [Code](#code)
   - [Speaker Notes](#speaker-notes)

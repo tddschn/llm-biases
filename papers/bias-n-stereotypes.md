@@ -13,6 +13,7 @@
     - [the new testing paradigm](#the-new-testing-paradigm)
       - [Design Principles](#design-principles)
       - [Example of using ambiguous pronouns](#example-of-using-ambiguous-pronouns)
+    - [what's special about the 2x2 prompt schema? what's it designed to do?](#whats-special-about-the-2x2-prompt-schema-whats-it-designed-to-do)
 
 <details>
 <summary>Longer version</summary>
@@ -80,3 +81,23 @@ Two Occupations: The sentence includes two occupations, "doctor" and "nurse," on
 Ambiguous Pronoun: The pronoun "she" is deliberately placed to create ambiguity about which occupation it refers to.
 
 Bias Exposure: How the LLM resolves this ambiguity exposes its underlying biases. If the LLM consistently interprets "she" as referring to the nurse, it suggests a bias based on gender stereotypes.
+
+### what's special about the 2x2 prompt schema? what's it designed to do? 
+
+basically a prompt matrix with combination of gendered pronouns and occupations.
+
+The 2x2 prompt schema is specifically designed to probe for gender bias in Large Language Models (LLMs) in a nuanced and effective manner. This schema is crucial for several reasons:
+
+1. **Ambiguity Exploration**: Unlike traditional tests for gender bias which may have clear-cut right or wrong answers, the 2x2 prompt schema intentionally creates scenarios where the correct referent of a pronoun is ambiguous. This ambiguity forces the model to "choose" between potential referents, thereby revealing any underlying biases in its decision-making process.
+
+2. **Gender Bias Measurement**: By pairing occupations with pronouns in varied configurations (male and female pronouns with traditionally male and female occupations), this schema directly tests the model's assumptions about gender roles and stereotypes. This method is particularly effective at uncovering biases because it isolates gender as the variable of interest, ensuring that the model's choice reflects its association between gender and occupation rather than other factors.
+
+3. **Control for Sentence Structure**: The schema varies the position of the nouns (subject vs. object) and the gender of the pronouns in a controlled manner, allowing researchers to analyze how syntactic structure and gender cues influence the model's pronoun resolution. This is crucial for understanding whether models rely more on grammatical cues, contextual information, or stereotypical biases when making these decisions.
+
+4. **Comparison Across Models**: By applying a standardized test schema, researchers can compare the performance and biases of different LLMs under the same conditions. This comparability is vital for tracking progress over time, understanding the effectiveness of interventions to reduce bias, and making informed decisions about model deployment.
+
+5. **Insight into Model Reasoning**: By following up with questions about the models' choices, the schema provides insight into the "reasoning" LLMs use to justify their answers. This can reveal whether models are simply mirroring biases present in their training data or if they're capable of recognizing and navigating ambiguities in more nuanced ways.
+
+6. **Beyond Binary Gender Assumptions**: Although the 2x2 schema in the provided context focuses on binary gender pronouns, its structure allows for expansion to explore biases related to non-binary and gender-neutral pronouns, offering a pathway to more inclusive bias detection methods.
+
+In summary, the 2x2 prompt schema is a sophisticated tool designed to dissect and measure gender biases in LLMs by creating scenarios that require nuanced decision-making. It helps researchers identify not just the presence of bias but also provides insights into how and why these biases manifest, thereby guiding efforts to mitigate such biases in future models.

@@ -1,5 +1,8 @@
 # Gender bias and stereotypes in Large Language Models
 
+
+![](https://github.com/cli/cli/assets/45612704/5dc867ae-fd3b-47bc-87f6-85d1c9fe14ac)
+
 `3582269.3615599.pdf`
 
 [paper](https://github.com/cli/cli/files/14222309/3582269.3615599.pdf)
@@ -55,7 +58,10 @@ Proposed Solutions: The researchers propose a new testing paradigm that differs 
 
 ## Proposed Solutions
 
-- **New testing paradigm**: Designed to test gender bias not captured by existing benchmarks
+- **New testing paradigm**: Designed to test gender bias not captured by existing benchmarks  
+  This paper focuses in particular on gender bias, proposing a new
+testing paradigm whose expressions are unlikely to be explicitly
+included in LLMs’ current training data
 
 ## Questions
 

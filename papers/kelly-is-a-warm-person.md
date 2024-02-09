@@ -1,5 +1,7 @@
 # “Kelly is a Warm Person, Joseph is a Role Model”: Gender Biases in LLM-Generated Reference Letters
 
+[paper](https://github.com/cli/cli/files/14222304/5166__kelly_is_a_warm_person_joseph.pdf)
+
 ![](https://github.com/cli/cli/assets/45612704/d5cdfbbf-6cdf-4ac9-9778-0c43fa4f2e23)
 
 ## Code

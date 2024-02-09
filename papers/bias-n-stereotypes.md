@@ -2,6 +2,8 @@
 
 `3582269.3615599.pdf`
 
+[paper](https://github.com/cli/cli/files/14222309/3582269.3615599.pdf)
+
 - [Gender bias and stereotypes in Large Language Models](#gender-bias-and-stereotypes-in-large-language-models)
   - [Summary of Findings](#summary-of-findings)
   - [Existing Efforts \& Limitations](#existing-efforts--limitations)

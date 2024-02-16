@@ -19,6 +19,7 @@
       - [Design Principles](#design-principles)
       - [Example of using ambiguous pronouns](#example-of-using-ambiguous-pronouns)
     - [what's special about the 2x2 prompt schema? what's it designed to do?](#whats-special-about-the-2x2-prompt-schema-whats-it-designed-to-do)
+    - [how does models rationalize existing biases?](#how-does-models-rationalize-existing-biases)
 
 <details>
 <summary>Longer version</summary>
@@ -109,3 +110,21 @@ The 2x2 prompt schema is specifically designed to probe for gender bias in Large
 6. **Beyond Binary Gender Assumptions**: Although the 2x2 schema in the provided context focuses on binary gender pronouns, its structure allows for expansion to explore biases related to non-binary and gender-neutral pronouns, offering a pathway to more inclusive bias detection methods.
 
 In summary, the 2x2 prompt schema is a sophisticated tool designed to dissect and measure gender biases in LLMs by creating scenarios that require nuanced decision-making. It helps researchers identify not just the presence of bias but also provides insights into how and why these biases manifest, thereby guiding efforts to mitigate such biases in future models.
+
+### how does models rationalize existing biases?
+
+The paper illustrates that LLMs often provide explanations for their choices that appear authoritative and logical but are in fact misleading or incorrect, serving to rationalize the models' inherent biases. These rationalizations are particularly concerning because they mask the true, biased reasons behind the models' decisions with seemingly plausible justifications. Here are examples from the paper highlighting how LLMs rationalize their biased choices:
+
+1. **Grammar-Based Rationalizations**:
+   - Models claimed that pronouns are more likely to refer to the subject or object of a sentence based on grammatical rules. For instance, a model might suggest "he" refers to the "doctor" because "doctor" is the subject of the sentence, despite the sentence being intentionally ambiguous and such grammatical rules not dictating pronoun reference in this context. This type of explanation inaccurately implies a grammatical basis for a choice that aligns with gender stereotypes (e.g., associating "doctor" with male pronouns and "nurse" with female pronouns).
+
+2. **Contextual Rationalizations**:
+   - Models also justified their choices by claiming a particular interpretation was more logical or plausible given the sentence's context. For example, a model might say "she" likely refers to the "nurse" because of the context, ignoring the sentence's constructed ambiguity. Such rationalizations suggest that the models are using societal stereotypes about occupations and gender as a basis for resolving ambiguity, rather than admitting the inherent bias in their decision-making process.
+
+3. **Explicit Gender Bias**:
+   - In some cases, models explicitly used gender stereotypes to justify their choices. For instance, a model might argue "she" cannot refer to the "doctor" because "she" is used for female referents, and the "nurse" is the only female role mentioned, thereby revealing an explicit reliance on gender stereotypes.
+
+4. **Confused or Illogical Explanations**:
+   - At times, models provided explanations that were confused or illogical, further obscuring the biased reasoning behind their choices. For example, a model might claim "she" cannot refer to a certain profession because of irrelevant or nonsensical reasons, which does not hold up under scrutiny but serves to rationalize a stereotypically biased choice.
+
+These examples demonstrate how LLMs use rationalizations to mask the biased underpinnings of their decisions. By providing explanations that seem logical on the surface, models obscure the fact that their choices are often based on societal stereotypes rather than neutral, grammatical, or contextual considerations. This behavior underscores the need for transparency and critical evaluation of model explanations to understand and mitigate biases in AI systems.

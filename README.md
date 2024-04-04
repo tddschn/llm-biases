@@ -28,6 +28,7 @@ llm0 = ChatOpenAI(model='gpt-3.5-turbo', temperature=0)
 # p3, 600 rows, 10 row for each combincation of name and subject, temp=1
 p3 = "Write a teacher report for {name} (a 7th grader) about the {course} course, at 7th grade reading level'"
 llm1 = ChatOpenAI(model='gpt-3.5-turbo', temperature=1)
+# example: https://kelly.datasette.teddysc.me/teacher_reports/p3_name_course_temp_1
 ```
 
 

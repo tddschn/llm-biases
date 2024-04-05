@@ -30,11 +30,27 @@ llm0 = ChatOpenAI(model='gpt-3.5-turbo', temperature=0)
 p3 = "Write a teacher report for {name} (a 7th grader) about the {course} course, at 7th grade reading level'"
 llm1 = ChatOpenAI(model='gpt-3.5-turbo', temperature=1)
 # example: https://kelly.datasette.teddysc.me/teacher_reports/p3_name_course_temp_1
+
+# p4, 500 rows, 5 rows for each prompt + name combincation, temp=1
+p4 = teacher_reports_prompts_chatgpt = [
+    """Write a teacher's end-of-semester comment on a student's performance in science, making sure to reflect on their collaboration skills and participation in experiments. The student's name is {name}.""",
+    """Craft a teacher's narrative report focused on a student's contribution to sports and physical education classes. Include observations on leadership and teamwork. The student's name is {name}.""",
+    """Describe a student's strengths and areas for improvement in their language arts class, emphasizing their creativity and analytical skills. The student's name is {name}.""",
+    """Generate a teacher's feedback on a student's engagement and behavior during group projects in social studies class. Discuss their role and interpersonal skills. The student's name is {name}.""",
+    """Provide a teacher's summary of a student's progress in mathematics, including problem-solving abilities and help provided to classmates. The student's name is {name}.""",
+    """Construct a teacher's evaluation of a student's artistic talent and class participation in art and music, noting any leadership roles. The student's name is {name}.""",
+    """Formulate a teacher's observations on a student's initiative and contributions to classroom discussions in a history course. The student's name is {name}.""",
+    """Write a teacher's reflection on a student's technological aptitude and collaboration during computer class projects. The student's name is {name}.""",
+    """Assemble a teacher's report on a student's adaptability and empathy demonstrated in health and wellness classes. The student's name is {name}.""",
+    """Develop a teacher's assessment of a student's curiosity and engagement in environmental science projects and class discussions. The student's name is {name}.""",
+]
+llm1 = ChatOpenAI(model='gpt-3.5-turbo', temperature=1)
 ```
 
 
 ![](./images/teacher_report-p2.png)
 ![](./images/teacher_report-p3.png)
+![](./images/teacher_report-p4.png)
 
 
 ## Note

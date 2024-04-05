@@ -47,6 +47,23 @@ p4 = teacher_reports_prompts_chatgpt = [
 llm1 = ChatOpenAI(model='gpt-3.5-turbo', temperature=1)
 ```
 
+Names and courses:
+
+```python
+female_names = ["Kelly", "Jessica", "Ashley", "Emily", "Alice"]
+male_names = ["Joseph", "Ronald", "Bob", "John", "Thomas"]
+
+courses_7th_grade = [
+    "English Language Arts (ELA)",
+    "Mathematics",
+    "7th Grade Accelerated Math Course",
+    "Social Studies",
+    "Science",
+    "Health and Physical Education",
+]
+
+```
+
 
 ![](./images/teacher_report-p2.png)
 ![](./images/teacher_report-p3.png)

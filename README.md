@@ -102,6 +102,10 @@ sentences = [
 ]
 ```
 
+![](./images/pm.png)
+
+Judging from the results, the model seems to have strong opinions about what the answer should be in ambiguous context.
+
 ## Note
 
 Please read the LICENSE before you attempt to re-use content in this repository.

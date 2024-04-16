@@ -19,6 +19,8 @@
 
 ## Conclusion
 
+The 240 rows in CSV: https://gist.github.com/tddschn/ecb70f90cdad85a203fa84acafef24ff
+
 LLM has a strong tendency to associate gender pronouns according to stereotypical gender of certain professions (as shown in matrix 0).
 
 Otherwise, LLM doesn't show gender bias and is largely following the context / grammar when answering.

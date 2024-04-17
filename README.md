@@ -80,7 +80,7 @@ courses_7th_grade = [
 
 ## prompt-matrix dataset
 
-6 base sentences, each with 4 variations. Running them with default temperature on `gpt-3.5-turbo` gives you the 240 rows [here](https://tddschn-kelly-data.hf.space/prompt-matrix/answers_with_question)
+6 base sentences, each with 4 variations. Running them with default temperature on `gpt-3.5-turbo`, repeating 10 times, gives you the 240 rows [here](https://tddschn-kelly-data.hf.space/prompt-matrix/answers_with_question) ([csv](https://gist.github.com/tddschn/ecb70f90cdad85a203fa84acafef24ff))
 
 ```python
 occupations: list[tuple[str, str]] = [

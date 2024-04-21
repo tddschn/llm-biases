@@ -139,4 +139,4 @@ I find this to be very America centric.
 
 ## Conclusion
 
-I found that 
+LLMs' biases are deeply rooted, just like us humans, and although companies spent lots of effort trying to make them not explicitly biased, they still are and the biased response can be easily elicited.

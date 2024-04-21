@@ -2,6 +2,9 @@
 
 https://llm-biases.teddysc.me
 
+> [!IMPORTANT]  
+> Please use the site above as the source of truth - this repository may be outdated.
+
 - [Gender Bias in LLMs](#gender-bias-in-llms)
   - [Data](#data)
   - [teacher\_reports dataset](#teacher_reports-dataset)
